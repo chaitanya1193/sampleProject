@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function abc(){
+        console.log("OK");
+        if(document.getElementById("nameId").value === document.getElementById("confirmId").value){
+            alert("Correct");            
+        }else{
+            alert("Incorrect");
+        }
+        
+    }
+</script>
+<body>
+    First Name : <input type="text" id="nameId"><br><br>
+    Confirm First Name : <input type="password" id="confirmId">
+    <br><br>
+    <button onclick="abc()">OK</button>
+</body>
+</html>
